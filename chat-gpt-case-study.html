@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat GPT Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <a href="index.html" class="back-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Projects
+    </a>
+
+    <nav class="case-study-nav">
+        <ul class="nav-list">
+            <li><a href="#overview" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Overview</span></a></li>
+            <li><a href="#problem" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Problem</span></a></li>
+            <li><a href="#opportunity" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Opportunity</span></a></li>
+            <li><a href="#goal" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Goal</span></a></li>
+            <li><a href="#role" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Role</span></a></li>
+            <li><a href="#research" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Research</span></a></li>
+            <li><a href="#ideation" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Ideation</span></a></li>
+            <li><a href="#design-process" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Design Process</span></a></li>
+            <li><a href="#final-design" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Final Design</span></a></li>
+            <li><a href="#learnings" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Learnings</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="case-study-hero-container">
+    <section class="case-study-hero">
+            <div class="hero-text-container">
+        <h1>CHAT GPT_BIG PROMPTS?<br>NO PROBLEM</h1>
+        <p>Developing a new feature for Chat GPT to help users navigate big prompts and organize their conversations better.</p>
+            </div>
+        <div class="case-study-video">
+            <video controls autoplay loop muted playsinline>
+                <source src="assets/chat-gpt-feature.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    </div>
+
+    <section class="project-overview" id="overview">
+        <p class="overview-label">Project overview</p>
+        <h2 class="overview-title">Before we<br>get started</h2>
+
+        <div class="project-meta">
+            <div class="meta-item">
+                <span class="meta-label">Timeline:</span>
+                <span class="meta-value">3 weeks project - 2025</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Tools:</span>
+                <span class="meta-value">Figma, Chat GPT, Adobe & Synthetic Users</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Role:</span>
+                <span class="meta-value">Product Designer</span>
+            </div>
+        </div>
+
+        <div class="project-description">
+            <p class="description-text">
+                <strong>Description:</strong> We were given a specific challenge to build a <strong>new feature</strong> for a already well established <strong>Digital Platform</strong>. While I was researching and in the process of brainstorming ideas with Chat GPT, I struggled to keep track of the specific ideas in tokens (responses) and also struggled to navigate through the prompt that was getting very big.
+            </p>
+            <p class="description-text">
+                At the same time I was also almost settling on a specific new feature for Pinterest. Then I suddenly realized "what if we put 1 + 1 together and get the best of both worlds Pinterest and Chat GPT?" So I pitched the idea of adding bookmarking, saving and organizing ideas and specific sections of tokens for Chat GPT to my group.
+            </p>
+            <p class="description-text">
+                Everybody loved the idea. 👌 Now we had to actually see if other users agreed 🤔
+            </p>
+            <p class="description-text">
+                While this prototype wasn't user-tested formally, the feature set is designed to address clear usability pain points — with success metrics like..
+            </p>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-item">
+                <img src="assets/icon-info.svg" alt="Information management icon" class="metric-icon">
+                <span class="metric-title">Easier information management</span>
+            </div>
+            <div class="metric-item">
+                <img src="assets/icon-navigation.svg" alt="Navigation icon" class="metric-icon">
+                <span class="metric-title">Faster navigation in long prompts</span>
+            </div>
+            <div class="metric-item">
+                <img src="assets/icon-reuse.svg" alt="Reusing ideas icon" class="metric-icon">
+                <span class="metric-title">Reduced friction in reusing ideas</span>
+            </div>
+            <div class="metric-item">
+                <img src="assets/icon-retention.svg" alt="User retention icon" class="metric-icon">
+                <span class="metric-title">Longer user retention</span>
+            </div>
+        </div>
+
+        <div class="project-gif-container">
+            <div class="chat-interface">
+                <video autoplay loop muted playsinline class="project-gif">
+                    <source src="assets/gif_1_chatgpt.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="problem-section" id="problem">
+        <p class="section-label">The Problem</p>
+        <h2 class="problem-title">Getting a little bit tense 😅</h2>
+
+        <div class="problem-content">
+            <p class="problem-description">
+                <strong>The problem:</strong> Disorganization and inefficiency when working with long prompts in ChatGPT.
+            </p>
+
+            <p class="problem-text">
+                Users often struggle to <span class="highlight">navigate lengthy conversations</span>, <span class="highlight">reuse key snippets</span>, and <span class="highlight">maintain continuity between sessions</span>. ChatGPT lacks built-in tools to help users structure, highlight, or return to important parts of a conversation — leading to wasted time, confusion, and repeated effort.
+            </p>
+
+            <div class="comparison-container">
+                <div class="comparison-item">
+                    <div class="comparison-gif">
+                        <img src="assets/chat-gpt-before.gif" alt="ChatGPT interface before changes" class="comparison-image">
+                    </div>
+                    <p class="comparison-label">before</p>
+                </div>
+                <div class="comparison-arrow">→</div>
+                <div class="comparison-item">
+                    <div class="comparison-gif">
+                        <img src="assets/chat-gpt-after.gif" alt="ChatGPT interface after changes" class="comparison-image">
+                    </div>
+                    <p class="comparison-label">after</p>
+                </div>
+            </div>
+
+            <div class="affected-users">
+                <p class="problem-description">
+                    <strong>Who was affected:</strong> 🎯 Power users, students, professionals, and creatives who rely on ChatGPT for research, writing, ideation, or coding — often using long prompts and complex conversations.<br>
+                    Everyone who is using ChatGPT more collaboratively.
+                </p>
+            </div>
+
+            <p class="problem-text">These users often faced:</p>
+            
+            <ul class="problem-list">
+                <li>Difficulty <span class="highlight">finding important parts of past chats</span></li>
+                <li>Frustration when <span class="highlight">losing track of ideas</span></li>
+                <li><span class="highlight">Wasted time</span> rewriting or searching for content</li>
+                <li><span class="highlight">Lack of continuity</span> between sessions</li>
+            </ul>
+
+            <p class="problem-text">
+                <strong>Why was this important:</strong> ...because 🌱 ChatGPT lacked proper organization tools, making it hard to manage long prompts and retrieve valuable information later.
+            </p>
+        </div>
+    </section>
+
+    <div class="opportunity-container" id="opportunity">
+        <section class="opportunity-section">
+            <div class="opportunity-content">
+                <p class="opportunity-label">What opportunity we saw:</p>
+                <div class="opportunity-text">
+                    <span>to transform ChatGPT from a one-off interaction tool</span>
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 24" fill="none" stroke="white" stroke-width="2">
+                        <line x1="0" y1="12" x2="40" y2="12"></line>
+                        <polyline points="30 4 40 12 30 20"></polyline>
+                    </svg>
+                    <span>into a long-term productivity companion.</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="additional-insight">
+        <p class="problem-text">
+            We noticed that many users were already treating ChatGPT like a workspace — brainstorming, coding, writing — but lacked the tools to organize, revisit, and build on their work.
+        </p>
+
+        <p class="problem-text">
+            By introducing features like saved snippets, a navigation bar for long prompts, and a snippet library, we saw the chance to:
+        </p>
+
+        <ul class="problem-list">
+            <li>Improve workflow continuity</li>
+            <li>Reduce cognitive load</li>
+            <li>Make the app feel more like a creative environment than a chatbot</li>
+        </ul>
+
+        <p class="problem-text" style="font-weight: 600;">
+            This was a clear opportunity to bridge the gap between conversation and creation.
+        </p>
+    </div>
+
+    <section class="goal-section" id="goal">
+        <p class="section-label">The Goal</p>
+        <h2 class="goal-title">Gotta reach for<br>the stars</h2>
+
+        <div class="goals-container">
+            <div class="goal-item">
+                <div class="goal-icon">
+                    <img src="assets/icon-navigation.png" alt="Navigation icon">
+                </div>
+                <p class="goal-text">Help users navigate<br>long prompts easily</p>
+            </div>
+
+            <div class="goal-item">
+                <div class="goal-icon">
+                    <img src="assets/icon-reuse.png" alt="Reuse icon">
+                </div>
+                <p class="goal-text">Let users save and<br>reuse key info</p>
+            </div>
+
+            <div class="goal-item">
+                <div class="goal-icon">
+                    <img src="assets/icon-retention.png" alt="Sessions icon">
+                </div>
+                <p class="goal-text">Encourage longer<br>sessions and<br>repeat use</p>
+            </div>
+        </div>
+
+        <div class="goal-statement-container">
+            <div class="goal-statement">
+                <p>We set out to make ChatGPT more usable for ongoing work — <span class="dimmed">not just quick chats.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="role-section" id="role">
+        <p class="section-label">My Role</p>
+        <h2 class="role-title">Tag-I'm it</h2>
+
+        <div class="role-content">
+            <div class="team-info">
+                <p><strong>Team:</strong> 4 people - <strong>My Role:</strong> Product Designer (Research & High Fidelity UI)</p>
+            </div>
+
+            <div class="role-description">
+                <p>I actively participated in <strong>all phases of the project</strong> — from research to final UI design. While it was a purely design-focused challenge, with no developers involved, I had a <strong>stronger contribution in the UI phase</strong>, where I helped translate user needs into clear, functional, and visually engaging interface elements. I also supported research efforts by <strong>conducting benchmarking</strong> and figuring out how chat gpt different form other llms (large language models) and how we could be different than them.</p>
+            </div>
+
+            <div class="process-section">
+                <h3>The process:</h3>
+                <div class="process-diagram">
+                    <img src="assets/process-diagram.svg" alt="Design process diagram showing Discover, Define, Develop, and Deliver phases" class="process-svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="research-section" id="research">
+        <p class="section-label">Research</p>
+        <h2 class="research-title">A wild insight<br>appears!</h2>
+
+        <div class="research-content">
+            <div class="desk-research">
+                <p class="research-subtitle">Desk Research</p>
+                <h3 class="stats-title">📊 ChatGPT User Statistics (2024)</h3>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">400 million</span>
+                        <p class="stat-description">weekly active users by<br>February 2025</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1 billion</span>
+                        <p class="stat-description">queries processed<br>daily</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">14 minutes</span>
+                        <p class="stat-description">average spent in a<br>single session</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid secondary">
+                    <div class="stat-item">
+                        <span class="stat-number">25-34</span>
+                        <p class="stat-description">age group with that<br>use the most</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">65%</span>
+                        <p class="stat-description">surveyed workers reported using<br>ChatGPT in the workplace</p>
+                    </div>
+                </div>
+
+                <div class="platform-usage">
+                    <h3 class="platform-title">📱 ChatGPT Usage by Platform</h3>
+                    <p class="platform-description">The latest data, ChatGPT's user base is nearly evenly split between mobile and desktop platforms, with a slight edge towards mobile usage:</p>
+                    
+                    <p class="platform-stat">Mobile Devices: Approximately 1.17 billion visits per month</p>
+                    <p class="platform-stat">Desktop Devices: Approximately 1.12 billion visits per month</p>
+                </div>
+
+                <div class="relevant-links">
+                    <h4>Relevant links</h4>
+                    <ul>
+                        <li><a href="https://www.aiprm.com/chatgpt-statistics/#chatgpt-user-habits" target="_blank">aiprm.com/chatgpt-statistics</a></li>
+                        <li><a href="https://nerdynav.com/chatgpt-statistics/" target="_blank">nerdynav.com/chatgpt-statistics</a></li>
+                        <li><a href="https://backlinko.com/chatgpt-stats" target="_blank">backlinko.com/chatgpt-stats</a></li>
+                        <li><a href="https://www.demandsage.com/chatgpt-statistics/" target="_blank">demandsage.com/chatgpt-statistics</a></li>
+                        <li><a href="https://foundationinc.co/lab/chatgpt-stats" target="_blank">foundationinc.co/lab/chatgpt-stats</a></li>
+                    </ul>
+                </div>
+
+                <div class="research-gif-container">
+                    <div class="research-gif">
+                        <video autoplay loop muted playsinline class="research-image">
+                            <source src="assets/gif_2_chatgpt.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="competitor-analysis">
+                    <p class="analysis-intro">We also did a competitor analysis:</p>
+                    <h3 class="analysis-title">🔍 Competitor Analysis - ChatGPT vs Others</h3>
+
+                    <div class="competitors-grid">
+                        <div class="competitor-row">
+                            <div class="competitor-item">
+                                <div class="competitor-logo gemini"></div>
+                                <span class="competitor-name">Google - Gemini</span>
+                            </div>
+                            <div class="competitor-item">
+                                <div class="competitor-logo mistral"></div>
+                                <span class="competitor-name">Mistral AI</span>
+                            </div>
+                            <div class="competitor-item">
+                                <div class="competitor-logo claude"></div>
+                                <span class="competitor-name">Claude - Anthropic</span>
+                            </div>
+                        </div>
+                        <div class="competitor-row">
+                            <div class="competitor-item">
+                                <div class="competitor-logo meta"></div>
+                                <span class="competitor-name">Meta AI</span>
+                            </div>
+                            <div class="competitor-item">
+                                <div class="competitor-logo amazon"></div>
+                                <span class="competitor-name">Amazon - Nova</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="strengths-section">
+                        <h4>ChatGPT strengths:</h4>
+                        <ul class="strengths-list">
+                            <li>High response quality</li>
+                            <li>Fast performance</li>
+                            <li>Competitive pricing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="key-insight-container">
+                    <div class="key-insight">
+                        <p class="insight-statement">Competitors outperform ChatGPT in <span class="underline">context window size</span>.</p>
+                    </div>
+                </div>
+
+                <div class="context-explanation">
+                    <h3 class="context-question">But now your are asking what exactly is a context window?</h3>
+                    <p class="context-definition">In AI platforms like ChatGPT, the context window refers to the amount of text (in tokens) that the model can "remember" and process at one time. It's essentially the model's short-term memory.</p>
+                    
+                    <p class="context-example">Imagine you're having a conversation with someone who can only recall the last few pages of your chat — that's the context window in action. The model uses it to understand the ongoing discussion, reference past messages, and generate coherent responses.</p>
+
+                    <div class="context-importance">
+                        <h4>Why Context Windows Matter:</h4>
+                        <ul class="importance-list">
+                            <li>Better summaries of large texts</li>
+                            <li>Improved complex problem solving across longer tasks</li>
+                            <li>Less fragmentation of text (fewer input limitations)</li>
+                        </ul>
+                    </div>
+
+                    <div class="ui-comparison">
+                        <h4>UI comparison</h4>
+                        <p>All competitors offer similar interfaces with no major UX differences.</p>
+                    </div>
+
+                    <div class="interface-screenshots">
+                        <div class="screenshot-grid">
+                            <div class="screenshot-item">
+                                <img src="assets/interface-google.png" alt="Google Gemini interface screenshot" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="assets/interface-lechat.png" alt="Le Chat interface screenshot" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-item">
+                                <img src="assets/interface-anthropic.png" alt="Anthropic Claude interface screenshot" class="screenshot-image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-research">
+                        <h3>Field Research</h3>
+                        <p class="research-intro">We used <strong>Synthetic users</strong> (AI platform that helps to conduct interviews and user research using AI) and real field <strong>interviews</strong> with real <strong>users</strong> to understand their pain points and priorities.</p>
+
+                        <div class="pain-points">
+                            <h4>We found 6 primary user pain points:</h4>
+                            <div class="cards-grid pain-points-grid">
+                                <div class="card pink">ChatGPT's outputs can't be trusted due to occasional inaccuracies</div>
+                                <div class="card pink">information sources often feel 'sketchy'</div>
+                                <div class="card pink">users rely on external tools to provide queries some structure, which requires significant upfront effort</div>
+                                <div class="card pink">organising ChatGPT responses is hard and leads to inefficiencies and frustration</div>
+                                <div class="card pink">it's difficult to find specific responses</div>
+                                <div class="card pink">saved responses often loose their original context, requiring additional time to re-interprete that content</div>
+                            </div>
+                        </div>
+
+                        <div class="takeaways">
+                            <h4>7 takeaways:</h4>
+                            <div class="cards-grid takeaways-grid">
+                                <div class="card blue">losing track of important responses triggers anxiety and frustration, disrupting workflows and reducing trust</div>
+                                <div class="card blue">saving and reviewing responses helps shape the users view on a specific topic</div>
+                                <div class="card blue">users prefer to save snippets instead of entire conversations, reducing information overload</div>
+                                <div class="card blue">users want the ability to save and add notes to content, preserving context and intended use</div>
+                                <div class="card blue">advanced users build local knowledge bases by saving their ChatGPT responses into categorized repositories</div>
+                                <div class="card blue">depending on the user's profile, they might wish to filter like data ranges or response types</div>
+                                <div class="card blue">users want the ability to tag and categorize responses directly with ChatGPT</div>
+                            </div>
+                        </div>
+
+                        <div class="surprising-info">
+                            <h4>2 surprising infos:</h4>
+                            <div class="cards-grid surprising-grid">
+                                <div class="card yellow">ChatGPT can be a catalyst for critical thinking and idea generation</div>
+                                <div class="card yellow">revisiting saved responses frequently sparks new connections</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="ideation-section" id="ideation">
+        <p class="section-label">Ideation | Brainstorming</p>
+        <h2 class="ideation-title">Ideas, meet Post-its.<br>Post-its, meet chaos.</h2>
+
+        <div class="ideation-content">
+            <p class="ideation-intro">Based on the information we had above we did some <strong>HOW MIGHT WE'S</strong> in order to better define our problem statement. Then we did a <strong>prioritization matrix</strong> to figure out the <strong>value and feasibility</strong> of each hmw - we ended up focusing more on <strong>two</strong> trying to connect the other hmws when and where we could:</p>
+
+            <div class="post-its-grid">
+                <div class="post-it black">
+                    <p>How might we make it easy for users to highlight and save specific sections of content for quick reference?</p>
+                </div>
+                <div class="post-it pink">
+                    <p>How might we design a virtual pinboard that feels intuitive and adapts to individual organization styles?</p>
+                </div>
+                <div class="post-it black">
+                    <p>How might we allow users to categorize saved content with custom color-coding to reflect their unique priorities?</p>
+                </div>
+                <div class="post-it pink">
+                    <p>How might we remind users to revisit saved content without overwhelming them with notifications?</p>
+                </div>
+                <div class="post-it pink">
+                    <p>How might we simplify the process of bookmarking responses with categories to suit different personal workflows?</p>
+                </div>
+                <div class="post-it pink">
+                    <p>How might we allow users to attach personal notes to saved content for added context or future reference?</p>
+                </div>
+            </div>
+
+            <div class="problem-statement-container">
+                <div class="problem-statement">
+                    <p class="statement-intro">This helped us formulate our final <span>problem statement:</span></p>
+                    <p class="statement-text">"Users face challenges in saving, organizing, and retrieving valuable content in ChatGPT, which disrupts workflows and adds unnecessary cognitive strain. The lack of essential tools — such as highlighting, categorization, and annotations — leaves critical insights scattered and hard to manage."</p>
+                </div>
+            </div>
+
+            <div class="prioritization-section">
+                <p class="prioritization-intro">Then we had a brainstorming section and then we made another <strong>prioritization matrix</strong> together with a <strong>MOSCOW</strong> in order to further narrow our ideas and efforts.</p>
+                
+                <div class="matrix-container">
+                    <div class="matrix-diagram">
+                        <img src="assets/prioritization-matrix.svg" alt="Prioritization matrix showing user value vs feasibility quadrants" class="matrix-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sketches-section">
+                <p class="sketches-intro">After that we started doing some <strong>sketches</strong> to understand how all of this would translate visually</p>
+                
+                <div class="sketches-container">
+                    <div class="sketches-grid">
+                        <div class="sketch-item">
+                            <img src="assets/sketch-1.jpg" alt="Initial interface sketches showing layout and navigation" class="sketch-image">
+                        </div>
+                        <div class="sketch-item">
+                            <img src="assets/sketch-2.jpg" alt="Additional interface sketches showing features and components" class="sketch-image">
+                        </div>
+                    </div>
+                    <p class="sketches-caption">sketches by a team member - Leonor Figueira</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="design-process-section" id="design-process">
+        <div class="design-process-content">
+            <p class="section-label">Design Process</p>
+            <h2 class="process-title">The long, winding road to<br>something that works</h2>
+
+            <p class="process-intro">So we started with this <strong>idea of adding options to highlight and save specific information of the prompts</strong>. We took inspiration for other platforms that already do this bookmarking and information retrivel very well like:</p>
+
+            <div class="inspiration-platforms">
+                <div class="platform-item">
+                    <img src="assets/logo-notion.png" alt="Notion logo" class="platform-logo">
+                    <span class="platform-name">Notion</span>
+                </div>
+                <div class="platform-item">
+                    <img src="assets/logo-pinterest.png" alt="Pinterest logo" class="platform-logo">
+                    <span class="platform-name">Pinterest</span>
+                </div>
+                <div class="platform-item">
+                    <img src="assets/logo-pocket.png" alt="Pocket logo" class="platform-logo">
+                    <span class="platform-name">Pocket</span>
+                </div>
+                <div class="platform-item">
+                    <img src="assets/logo-trello.png" alt="Trello logo" class="platform-logo">
+                    <span class="platform-name">Trello</span>
+                </div>
+                <div class="platform-item">
+                    <img src="assets/logo-miro.png" alt="Miro logo" class="platform-logo">
+                    <span class="platform-name">Miro</span>
+                </div>
+            </div>
+
+            <div class="platforms-showcase">
+                <div class="showcase-grid">
+                    <img src="assets/platform-notion.jpg" alt="Notion interface example" class="showcase-image">
+                    <img src="assets/platform-pinterest.jpg" alt="Pinterest interface example" class="showcase-image">
+                    <img src="assets/platform-pocket.jpg" alt="Pocket interface example" class="showcase-image">
+                    <img src="assets/platform-miro.jpg" alt="Miro interface example" class="showcase-image">
+                </div>
+            </div>
+
+            <div class="user-flow-section">
+                <p class="flow-intro">Then we started focusing on the <strong>user flow</strong> in order to get a sense on how and what screens did we needed to create visually in order to explain our idea and further develop it:</p>
+                
+                <div class="flow-diagram">
+                    <div class="flow-container">
+                        <img src="assets/user-flow-1.svg" alt="User flow diagram showing the navigation process" class="flow-image">
+                        <p class="flow-caption">Flow 1<br>Focused on navigation</p>
+                    </div>
+                </div>
+
+                <div class="flow-diagram">
+                    <div class="flow-container">
+                        <img src="assets/user-flow-2.svg" alt="User flow diagram showing the documentation process" class="flow-image">
+                        <p class="flow-caption">Flow 2<br>Focused on documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-design-section" id="final-design">
+        <p class="section-label">The Final Design</p>
+        <h2 class="final-design-title">Designeeeers...assemble!</h2>
+
+        <div class="final-design-content">
+            <p class="design-intro">
+                We presented a redesigned ChatGPT interface that allows users to save, organize, and revisit key responses using features like 
+                <span class="feature">snippet bookmarking</span>, 
+                <span class="feature">categorized folders</span>, a 
+                <span class="feature">quick-access bar</span>, and 
+                <span class="feature">note attachments</span>. 
+                These tools were seamlessly integrated into the existing UI to enhance usability without overwhelming the user.
+            </p>
+
+            <div class="feature-showcase">
+                <div class="feature-label">Navigation Bar</div>
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <img src="assets/navigation-interface.jpg" alt="ChatGPT navigation interface demonstration" class="feature-image">
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation top-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>The AI could change the links and titles of the navigation bar as the conversation was ongoing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-showcase">
+                <div class="feature-label">Highlighting option</div>
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <img src="assets/highlighting-interface-1.jpg" alt="ChatGPT highlighting interface step 1" class="feature-image">
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation top-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>Pop-up where the user can highlight specific parts of the prompts, copy, and inspect the information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <img src="assets/highlighting-interface-2.jpg" alt="ChatGPT highlighting interface step 2" class="feature-image">
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation top-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>Selection overlay appears when text is highlighted, allowing for quick actions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <img src="assets/highlighting-interface-3.jpg" alt="ChatGPT highlighting interface step 3" class="feature-image">
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation bottom-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>Overlay to add a caption, description and categorize the highlighted text you want to save</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-showcase">
+                <div class="feature-label">Quick Access Bar</div>
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <video autoplay loop muted playsinline class="feature-image">
+                            <source src="assets/quick-access-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation top-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>Opens up a side bar that has all the saved snippets where you can add comments and other customizable options</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-showcase">
+                <div class="feature-label">Library</div>
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <img src="assets/library-1.jpg" alt="ChatGPT library overview" class="feature-image">
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation top-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>Overview of all saved snippets organized by categories and tags</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <img src="assets/library-2.jpg" alt="ChatGPT library categories" class="feature-image">
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation top-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>Create and manage custom categories to organize your saved content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <img src="assets/library-3.jpg" alt="ChatGPT library search" class="feature-image">
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation top-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>Powerful search functionality to quickly find specific snippets or topics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-image-wrapper">
+                    <div class="feature-image-container">
+                        <img src="assets/library-4.jpg" alt="ChatGPT library detail view" class="feature-image">
+                    </div>
+                    <div class="feature-annotations">
+                        <div class="annotation top-right">
+                            <div class="annotation-line"></div>
+                            <div class="annotation-content">
+                                <p>Option to choose snippets and rewind them into new conversations to get surprising results from the AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-best-version">
+                <h3>Why is this the best version?</h3>
+                <p class="version-explanation">This version directly addresses user pain points such as:</p>
+                <ul class="pain-points-list">
+                    <li>Losing important responses</li>
+                    <li>Information overload</li>
+                    <li>Lack of easy content retrieval</li>
+                </ul>
+
+                <p class="version-explanation">It also supports different workflows (creative, research, teaching, etc.) by introducing:</p>
+                <ul class="features-list">
+                    <li>Snippet-based saving</li>
+                    <li>Custom tags and folders</li>
+                    <li>Smart reminders without pushy notifications</li>
+                    <li>Context-preserving notes</li>
+                    <li>Quick access to recent and most-used saves.</li>
+                </ul>
+
+                <p class="version-explanation highlight">User expectations around personalization and clarity were core to our design decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="learnings-section" id="learnings">
+        <p class="section-label">What I Learned / Improvements</p>
+        <h2 class="learnings-title">Plot twist: I didn't know<br>everything</h2>
+
+        <div class="learnings-content">
+            <div class="learning-item">
+                <h3>What skills did you build?</h3>
+                <p class="learning-text">
+                    User research, information architecture, UI/UX design, prototyping in Figma, and product thinking. I improved at organizing content workflows, designing intuitive interfaces, and communicating ideas clearly through visuals and storytelling.
+                </p>
+            </div>
+
+            <div class="learning-item">
+                <h3>Did anything not go as planned?</h3>
+                <p class="learning-text">
+                    We didn't have time or resources to conduct user testing, which limited validation. We also had to pivot the scope halfway through to focus more on UI than intended. These challenges taught us to be more flexible and realistic with planning and expectations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="next-steps-container">
+        <div class="next-steps-content">
+            <p class="section-label">Next Steps</p>
+            <h2 class="next-steps-title">Still cooking</h2>
+
+            <div class="next-steps-text">
+                <p>We would have loved to create a version of this feature for the mobile version 📱 because of the small amount of time we add to focus on the desktop version first.</p>
+                
+                <p>We would love to test the feature on the users 👯 like you so we can better refine it and improve it. Also to see if we could hit specific real world metrics with our changes to the UI of chat gpt. 😊</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="thank-you-section">
+        <div class="thank-you-content">
+            <h2>Thank you for reading! 🙏</h2>
+            <p>Check out another project:</p>
+            <a href="wise-circles-case-study.html" class="next-project">
+                <span class="project-label">Next Project</span>
+                <span class="project-title">Wise Circles - Split the bill, not the bond</span>
+                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <script src="scroll.js"></script>
+    <script>
+        window.onscroll = function() {
+            // Progress bar
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+
+            // Navigation highlighting
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                if (winScroll >= sectionTop && winScroll < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').slice(1) === section.getAttribute('id')) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        };
+
+        // Smooth scrolling
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                const offset = window.innerWidth > 1200 ? 0 : 60;
+                
+                window.scrollTo({
+                    top: targetSection.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function openDandad() {
+            window.open('https://www.dandad.org/en/d-ad-awards/', '_blank', 'noopener,noreferrer');
+        }
+    </script>
+</body>
+</html> 
