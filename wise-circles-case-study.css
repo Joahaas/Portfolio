@@ -1077,6 +1077,15 @@ body {
     background-color: var(--wise-green);
 }
 
+.competitor-analysis-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-top: 2rem;
+    max-width: 1000px;
+}
+
 .competitor-screens {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -1133,6 +1142,11 @@ body {
         margin-bottom: 2.5rem;
     }
 
+    .competitor-analysis-text {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
     .competitor-section:last-child .competitor-screens {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1152,6 +1166,11 @@ body {
         grid-template-columns: repeat(1, 1fr);
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .competitor-analysis-text {
+        font-size: 0.875rem;
+        margin-top: 1.25rem;
     }
 }
 
@@ -1259,6 +1278,7 @@ body {
 }
 
 .field-research p {
+    font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
     line-height: 1.6;
     color: var(--wise-dark);
@@ -2477,12 +2497,28 @@ body {
     overflow: hidden;
 }
 
+.video-credit {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
 .demo-video {
     margin-top: 6rem;
     width: 100%;
     height: auto;
     display: block;
     background: #000;
+}
+
+@media (max-width: 768px) {
+    .video-credit {
+        font-size: 0.75rem;
+        margin-top: 0.75rem;
+    }
 }
 
 /* Learnings section styles */
