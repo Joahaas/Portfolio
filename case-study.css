@@ -736,7 +736,11 @@ body::before {
 .comparison-arrow {
     font-size: 2rem;
     color: var(--text);
-    margin: 0 1rem;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
