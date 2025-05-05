@@ -697,19 +697,14 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    margin: 6rem auto;
-    width: 100%;
-    max-width: 64.125rem;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 .comparison-item {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    width: 100%;
+    max-width: 45%;
+    text-align: center;
 }
 
 .comparison-gif {
