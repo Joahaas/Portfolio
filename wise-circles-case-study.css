@@ -748,15 +748,10 @@ body {
 
 /* Screenshot Section */
 .screenshot-blend-container {
-    width: 100vw;
+    width: 100%;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-top: 6rem;
+    margin: 6rem 0 0;
     padding: 4rem 0;
-    margin-bottom: 0;
     background: var(--wise-green);
     display: flex;
     justify-content: center;
@@ -766,8 +761,6 @@ body {
 .screenshot-section {
     width: 100%;
     padding: 0 2rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
     display: flex;
     justify-content: center;
 }
