@@ -2769,4 +2769,390 @@ body::before {
         justify-content: flex-start;
         padding: 0 1rem;
     }
-} 
+}
+
+/* Bottom Navigation Styles */
+.bottom-nav {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-item svg {
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nav-item:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.nav-item:hover svg {
+    transform: scale(1.1);
+}
+
+.nav-item .emoji {
+    font-size: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-item:hover .emoji {
+    transform: scale(1.15);
+}
+
+/* Special book page-turning animation */
+.nav-item:hover .emoji.book {
+    animation: bookPageTurn 0.8s ease-in-out;
+}
+
+/* Social Navigation Item */
+.social-nav-item {
+    position: relative;
+}
+
+.social-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+}
+
+.social-dropdown {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: rgba(17, 17, 17, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(10px);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 1001;
+}
+
+.social-nav-item.active .social-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.social-dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.social-dropdown-item:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.1);
+}
+
+.social-dropdown-item svg {
+    width: 18px;
+    height: 18px;
+    stroke: #fff !important;
+    color: #fff !important;
+}
+
+/* Tooltip for social dropdown items */
+.social-dropdown-item::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.social-dropdown-item::before {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.social-dropdown-item:hover::after,
+.social-dropdown-item:hover::before {
+    opacity: 1;
+}
+
+@keyframes bookPageTurn {
+    0% {
+        transform: scale(1.15) rotateY(0deg);
+    }
+    25% {
+        transform: scale(1.15) rotateY(-15deg);
+    }
+    50% {
+        transform: scale(1.15) rotateY(-25deg);
+    }
+    75% {
+        transform: scale(1.15) rotateY(-15deg);
+    }
+    100% {
+        transform: scale(1.15) rotateY(0deg);
+    }
+}
+
+/* Tooltip for bottom navigation */
+.nav-item::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.nav-item:hover::after,
+.nav-item:hover::before {
+    opacity: 1;
+}
+
+/* Things I Love Dropdown (matches social dropdown) */
+.things-nav-item {
+  position: relative;
+}
+.things-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+}
+.things-dropdown {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 1001;
+}
+.things-nav-item.active .things-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.things-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+.things-dropdown-item:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+.things-dropdown-item .emoji {
+  font-size: 1.2rem;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.things-dropdown-item:hover .emoji.book {
+  animation: bookPageTurn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.things-dropdown-item:hover .emoji.podcast {
+  animation: podcastPulse 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.things-dropdown-item:hover .emoji.cinema {
+  animation: cinemaSparkle 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes bookPageTurn {
+  0%, 100% { transform: rotateY(0deg); }
+  25% { transform: rotateY(-15deg) scale(1.1); }
+  50% { transform: rotateY(-25deg) scale(1.15); }
+  75% { transform: rotateY(-15deg) scale(1.1); }
+}
+
+@keyframes podcastPulse {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1.3); }
+  75% { transform: scale(1.2); }
+}
+
+@keyframes cinemaSparkle {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg); 
+    filter: brightness(1);
+  }
+  25% { 
+    transform: scale(1.1) rotate(5deg); 
+    filter: brightness(1.3) drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  }
+  50% { 
+    transform: scale(1.2) rotate(-5deg); 
+    filter: brightness(1.5) drop-shadow(0 0 12px rgba(255, 255, 255, 1));
+  }
+  75% { 
+    transform: scale(1.1) rotate(5deg); 
+    filter: brightness(1.3) drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .things-dropdown-item .emoji {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.things-dropdown-item[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.things-dropdown-item[data-tooltip]::before {
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.things-dropdown-item[data-tooltip]:hover::after,
+.things-dropdown-item[data-tooltip]:hover::before {
+  opacity: 1;
+}

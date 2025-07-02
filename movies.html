@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies & Series I Love - João Fonseca</title>
+    <link rel="icon" type="image/png" href="assets/flavicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/flavicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/flavicon.png">
+    <link rel="apple-touch-icon" href="assets/flavicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header-row">
+                <h1>Movies & Series I Love <span class="emoji cinema" data-tooltip="Trying to make it to the cinema more often">🎬</span></h1>
+            </div>
+            <p>Here are the films and series that have captured my imagination lately. From thought-provoking sci-fi to compelling dramas, these stories inspire my creative thinking.</p>
+        </header>
+
+
+
+        <section>
+            <h2>Recent Favorites</h2>
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/The_boy_and_the_heron.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <div class="movie-header">
+                            <h3>The Boy and The Heron</h3>
+                            <p class="movie-year">2023</p>
+                            <p class="movie-description">I just love this movie so much. Its about a boy coming to terms with deep irreversible lost and pain. Also about deep concepts of life and death and how natural and necessary both are in the grand scheme of things. </p>
+                            <div class="movie-tags">
+                                <span>Animation</span>
+                                <span>Grieving</span>
+                                <span>Life</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/Squid\ Game\ Wallpaper\ for\ Android_iOS.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <div class="movie-header">
+                            <h3>Squid Game 4th Season</h3>
+                            <p class="movie-year">2025</p>
+                            <p class="movie-description">Just finished the last season of Squid Game and yes—I ugly cried. The ending felt a bit expected, but it still hit hard. Brutal, emotional, and so well done.</p>
+                            <div class="movie-tags">
+                                <span>Drama</span>
+                                <span>Emotional</span>
+                                <span>Bittersweet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Series I loved</h2>
+            <div class="series-container">
+                <button class="scroll-arrow left" onclick="scrollSeries('left')">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <div class="series-scroll">
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/sense8.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>Sense 8</h3>
+                        <p class="movie-year">2015-2018</p>
+                        <p class="movie-description">Sense8 is one of those shows that stays with you. It's emotional, raw, and beautifully weird—about eight strangers connected across the world in ways that go way beyond logic. It's not just sci-fi, it's a love letter to identity, empathy, and what it means to be human.</p>
+                        <div class="movie-tags">
+                            <span>Connected</span>
+                            <span>Identity</span>
+                            <span>Global</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/\'Cheer\'\ Season\ 2\ Review_\ Netflix\ Show\ Tackles\ Jerry\ Harris\,\ Season\ 1.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>Cheer</h3>
+                        <p class="movie-year">2020-2022</p>
+                        <p class="movie-description">Cheer is way more than a show about cheerleading. It's intense, emotional, and incredibly human—showing the grit, discipline, and vulnerability behind every stunt. Showing another way of making a family.</p>
+                        <div class="movie-tags">
+                            <span>Discipline</span>
+                            <span>Resilience</span>
+                            <span>Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/wheel_of_time.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>Wheel of Time</h3>
+                        <p class="movie-year">2021-2025</p>
+                        <p class="movie-description">The Wheel of Time is a sweeping fantasy about magic, prophecy, and the bonds that hold people together. Beyond the epic battles and ancient powers, it's a story about chosen family—how strangers become everything to each other when the world is falling apart.</p>
+                        <div class="movie-tags">
+                            <span>Fantasy</span>
+                            <span>Found Family</span>
+                            <span>Intense</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/attack_on_titan.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>Attack on Titan</h3>
+                        <p class="movie-year">2013-2023</p>
+                        <p class="movie-description">Attack on Titan is raw, intense, and unforgettable. What starts as a fight for survival becomes a deep exploration of freedom, war, and the cycle of violence. It's brutal and emotional, with twists that shake everything you thought you knew. A masterpiece in storytelling and world-building. </p>
+                        <div class="movie-tags">
+                            <span>Adventure</span>
+                            <span>Violence</span>
+                            <span>Emotional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/Severance\ S01\ \(2022\).jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>Severance</h3>
+                        <p class="movie-year">2022-</p>
+                        <p class="movie-description">Severance is one of the most unsettling and brilliant shows I've seen. It dives into the tension between work and identity, asking what happens when you separate who you are from what you do. It's minimal, strange, and haunting in the best way.</p>
+                        <div class="movie-tags">
+                            <span>Minimal</span>
+                            <span>Strange</span>
+                            <span>Hunting</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button class="scroll-arrow right" onclick="scrollSeries('right')">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h2>All-Time Favorites</h2>
+            <div class="series-container">
+                <button class="scroll-arrow left" onclick="scrollFavorites('left')">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <div class="series-scroll">
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/one_piece_1.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>One Piece</h3>
+                        <p class="movie-year">1999-</p>
+                        <p class="movie-description">One Piece has been with me for years—and it's more than just pirates and treasure. It's about freedom, loyalty, and the fight to challenge corrupt systems. At its heart, it's a story of rebellion, chosen family, and chasing impossible dreams. It's wild, emotional, and still one of the most powerful adventures I've followed.</p>
+                        <div class="movie-tags">
+                            <span>Adventure</span>
+                            <span>Loyalty</span>
+                            <span>Rebellion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/Dragon_Ball.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>Dragon Ball</h3>
+                        <p class="movie-year">1986-2003</p>
+                        <p class="movie-description">Dragon Ball was one of my first gateways into epic storytelling. It's all about growth—pushing past limits, protecting the people you love, and never backing down from a challenge. It's pure energy, heart, and childhood wonder wrapped in one long, legendary fight.</p>
+                        <div class="movie-tags">
+                            <span>Fighting</span>
+                            <span>Adventure</span>
+                            <span>Coming-of-age</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/treasure\ planet\ adventure\ wallpaper.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>Treasure Planet</h3>
+                        <p class="movie-year">2002</p>
+                        <p class="movie-description">Treasure Planet is one of those underrated gems that mixes adventure with real emotion. It's a story about growing up, chasing stars, and finding belonging in unexpected places. The sci-fi twist on a classic tale makes it timeless—and honestly, still hits hard.</p>
+                        <div class="movie-tags">
+                            <span>Adventure</span>
+                            <span>Emotional</span>
+                            <span>Coming-of-age</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-cover" style="background-image: url('assets/HARRY\ POTTER.jpeg');">
+                    </div>
+                    <div class="movie-content">
+                        <h3>Harry Potter Movies</h3>
+                        <p class="movie-year">2001-2011</p>
+                        <p class="movie-description">The Harry Potter films are pure magic—literally and emotionally. They shaped a generation with themes of friendship, courage, and growing up in a world full of wonder and darkness. Whether it’s the first train ride to Hogwarts or the final battle, they’ll always feel like home.</p>
+                        <div class="movie-tags">
+                            <span>Fantasy</span>
+                            <span>Friendship</span>
+                            <span>Love</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button class="scroll-arrow right" onclick="scrollFavorites('right')">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="bottom-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-item" data-tooltip="Home & Projects">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+            <div class="things-nav-item">
+                <button class="nav-item things-toggle" data-tooltip="Things I Love">
+                    <span class="emoji" style="font-size:1.3rem;">❤️</span>
+                </button>
+                <div class="things-dropdown">
+                    <a href="books.html" class="things-dropdown-item" data-tooltip="Books">
+                        <span class="emoji">📖</span>
+                    </a>
+                    <a href="podcasts.html" class="things-dropdown-item" data-tooltip="Podcasts">
+                        <span class="emoji">🎧</span>
+                    </a>
+                    <a href="movies.html" class="things-dropdown-item" data-tooltip="Movies & Series">
+                        <span class="emoji">🎬</span>
+                    </a>
+                </div>
+            </div>
+            <div class="social-nav-item">
+                <button class="nav-item social-toggle" data-tooltip="Social Links">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </button>
+                <div class="social-dropdown">
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-lima-da-fonseca-b49371164/" target="_blank" class="social-dropdown-item" data-tooltip="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:jpedrolimafonseca@gmail.com" target="_blank" class="social-dropdown-item" data-tooltip="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="assets/JoaoFonseca_ProductDesigner_2025.pdf" download class="social-dropdown-item" data-tooltip="Download CV">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="scroll.js"></script>
+</body>
+</html> 

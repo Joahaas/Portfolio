@@ -1,0 +1,180 @@
+/* Podcast Gallery Styles */
+.podcasts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2.5rem 0 2rem 0;
+  justify-items: center;
+}
+@media (max-width: 900px) {
+  .podcasts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .podcasts-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+.podcast-card {
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12), 0 3px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  height: 320px;
+  min-width: 0;
+  padding: 1.2rem 1rem 1rem 1rem;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  justify-content: flex-start;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  border: none;
+  overflow: hidden;
+}
+
+.podcast-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(240, 240, 240, 0.02) 100%);
+  border-radius: 20px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.podcast-card:hover {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2), 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-10px) scale(1.03) rotate3d(0, 1, 0, 1deg);
+  border: none;
+}
+
+.podcast-card:hover::before {
+  opacity: 1;
+}
+
+.podcast-cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 0 auto 0.7rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.podcast-card:hover .podcast-cover {
+  transform: scale(1.08) rotate3d(0, 1, 0, 2deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.podcast-cover::after {
+  content: '🎧';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  opacity: 0.3;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.podcast-card:hover .podcast-cover::after {
+  opacity: 0.6;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.podcast-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 2;
+  position: relative;
+}
+
+.podcast-card:hover .podcast-cover img {
+  transform: scale(1.05);
+}
+
+.podcast-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  color: #ffffff;
+  margin-top: 0.2rem;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 2;
+  position: relative;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.podcast-card:hover .podcast-title {
+  color: #ffffff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  transform: translateZ(15px);
+}
+
+.podcast-host {
+  font-size: 0.97rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-bottom: 0;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 2;
+  position: relative;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.podcast-card:hover .podcast-host {
+  color: rgba(255, 255, 255, 1);
+  transform: translateZ(10px);
+}
+
+/* Add a subtle pulse animation for podcast cards */
+@keyframes podcastPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.podcast-card:hover {
+  animation: podcastPulse 2s ease-in-out infinite;
+}
+
+@media (max-width: 600px) {
+  .podcast-card {
+    width: 90vw;
+    max-width: 320px;
+    height: auto;
+    min-height: 270px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .podcast-cover {
+    width: 140px;
+    height: 140px;
+  }
+  .podcast-cover::after {
+    font-size: 2rem;
+  }
+}
+
+ 
