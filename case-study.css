@@ -49,11 +49,11 @@ body::before {
 .case-study {
     max-width: 64.125rem;
     margin: 0 auto;
-    padding: 8rem 1.5rem;
+    padding: 6rem 1.5rem;
 }
 
 .case-study-header {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .case-study-header h1 {
@@ -70,7 +70,7 @@ body::before {
     width: 100%;
     border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .case-study-image img {
@@ -86,11 +86,11 @@ body::before {
 
 .case-study-content h2 {
     font-size: 1.75rem;
-    margin: 3rem 0 1.5rem;
+    margin: 2.5rem 0 1rem;
 }
 
 .case-study-content p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--text-secondary);
 }
 
@@ -102,7 +102,7 @@ body::before {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .case-study-hero {
@@ -112,8 +112,8 @@ body::before {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 6rem 2rem;
-    gap: 4rem;
+    padding: 5rem 2rem;
+    gap: 3rem;
     max-width: 90rem;
     margin: 0 auto;
 }
@@ -325,7 +325,7 @@ body::before {
 .problem-section {
     max-width: 64.125rem;
     margin: 0 auto;
-    padding: 8rem 1.5rem;
+    padding: 6rem 1.5rem;
 }
 
 .overview-label {
@@ -339,7 +339,7 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     color: var(--text);
 }
 
@@ -347,9 +347,9 @@ body::before {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     max-width: 64.125rem;
-    margin: 0 auto 4rem;
+    margin: 0 auto 3rem;
 }
 
 .meta-item {
@@ -383,7 +383,7 @@ body::before {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     width: 100%;
     max-width: 100%;
 }
@@ -397,9 +397,9 @@ body::before {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     max-width: 64.125rem;
-    margin: 4rem auto 0;
+    margin: 3rem auto 0;
 }
 
 .metric-item {
@@ -465,7 +465,7 @@ body::before {
 .project-gif-container {
     width: 100%;
     max-width: 64.125rem;
-    margin: 6rem auto 0;
+    margin: 4rem auto 0;
     border-radius: 12px;
     overflow: hidden;
     background: #1E1E1E;
@@ -488,7 +488,7 @@ body::before {
 }
 
 .problem-section {
-    padding: 6rem 1.5rem;
+    padding: 4rem 1.5rem;
     max-width: 64.125rem;
     margin: 0 auto;
 }
@@ -504,7 +504,7 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -519,7 +519,7 @@ body::before {
 .problem-description {
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--text);
     max-width: 100%;
 }
@@ -528,7 +528,7 @@ body::before {
     color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     max-width: 100%;
 }
 
@@ -542,7 +542,7 @@ body::before {
 .problem-list li {
     position: relative;
     padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--text-secondary);
     font-size: 1.125rem;
     line-height: 1.8;
@@ -561,7 +561,7 @@ body::before {
 }
 
 .affected-users {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 @media (max-width: 768px) {
@@ -582,9 +582,9 @@ body::before {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    padding: 6rem 0;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
+    padding: 4rem 0;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
 }
 
 .opportunity-section {
@@ -642,12 +642,12 @@ body::before {
 
 .additional-insight {
     max-width: 64.125rem;
-    margin: 8rem auto;
+    margin: 6rem auto;
     padding: 0 1.5rem;
 }
 
 .additional-insight .problem-text {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .additional-insight .problem-list {
@@ -793,7 +793,7 @@ body::before {
 
 .goal-section {
     max-width: 64.125rem;
-    margin: 8rem auto;
+    margin: 6rem auto;
     padding: 0 1.5rem;
 }
 
@@ -801,14 +801,14 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin: 1rem 0 8rem;
+    margin: 1rem 0 6rem;
     color: var(--text);
 }
 
 .goals-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .goal-item {
@@ -816,7 +816,7 @@ body::before {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .goal-icon {
@@ -864,8 +864,8 @@ body::before {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    padding: 6rem 0;
-    margin-top: 8rem;
+    padding: 4rem 0;
+    margin-top: 6rem;
 }
 
 .goal-statement {
@@ -901,7 +901,7 @@ body::before {
 
 .role-section {
     max-width: 64.125rem;
-    margin: 8rem auto;
+    margin: 6rem auto;
     padding: 0 1.5rem;
 }
 
@@ -909,14 +909,14 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin: 1rem 0 8rem;
+    margin: 1rem 0 6rem;
     color: var(--text);
 }
 
 .role-content {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     padding-top: -6rem;
     margin-top: -6rem;
 }
@@ -945,14 +945,14 @@ body::before {
 }
 
 .process-section {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .process-section h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .process-diagram {
@@ -1128,7 +1128,7 @@ body::before {
 
 .research-section {
     max-width: 64.125rem;
-    margin: 8rem auto;
+    margin: 6rem auto;
     padding: 0 1.5rem;
 }
 
@@ -1136,33 +1136,33 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 3rem;
     color: var(--text);
 }
 
 .research-subtitle {
     font-size: 1.125rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .stats-title {
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    margin-bottom: 4rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 .stats-grid.secondary {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 }
 
 .stat-item {
@@ -1185,21 +1185,21 @@ body::before {
 }
 
 .platform-usage {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .platform-title {
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .platform-description {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     max-width: 54rem;
 }
 
@@ -1207,7 +1207,7 @@ body::before {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     text-align: left;
 }
 
@@ -1226,8 +1226,8 @@ body::before {
 }
 
 .relevant-links {
-    margin-top: 4rem;
-    padding-top: 2rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--card-bg);
 }
 
@@ -1235,7 +1235,7 @@ body::before {
     font-size: 1rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .relevant-links ul {
@@ -1245,7 +1245,7 @@ body::before {
 }
 
 .relevant-links li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .relevant-links a {
@@ -1310,7 +1310,7 @@ body::before {
 .research-gif-container {
     width: 100%;
     max-width: 64.125rem;
-    margin: 6rem auto 0;
+    margin: 4rem auto 0;
     border-radius: 12px;
     overflow: hidden;
     background: #1E1E1E;
@@ -1464,8 +1464,8 @@ body::before {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    padding: 6rem 0;
-    margin-top: 8rem;
+    padding: 4rem 0;
+    margin-top: 6rem;
 }
 
 .key-insight {
@@ -1502,7 +1502,7 @@ body::before {
 
 .context-explanation {
     max-width: 64.125rem;
-    margin: 6rem auto 0;
+    margin: 4rem auto 0;
     padding: 0 1.5rem;
 }
 
@@ -1510,7 +1510,7 @@ body::before {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .context-definition,
@@ -1518,13 +1518,13 @@ body::before {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     width: 100%;
     max-width: 100%;
 }
 
 .context-importance {
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 .context-importance h4,
@@ -1532,7 +1532,7 @@ body::before {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .importance-list {
@@ -1544,18 +1544,19 @@ body::before {
 .importance-list li {
     font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     line-height: 1.8;
 }
 
 .ui-comparison {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .ui-comparison p {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -1581,7 +1582,7 @@ body::before {
 }
 
 .interface-screenshots {
-    margin-top: 4rem;
+    margin-top: 3rem;
     width: 100%;
     overflow: hidden;
 }
@@ -1637,7 +1638,7 @@ body::before {
 }
 
 .field-research {
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .field-research h3 {
@@ -1650,7 +1651,7 @@ body::before {
 .research-intro {
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     width: 100%;
     max-width: 100%;
     color: var(--text-secondary);
@@ -1664,14 +1665,14 @@ body::before {
 .pain-points,
 .takeaways,
 .surprising-info {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .field-research h4 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .cards-grid {
@@ -1759,7 +1760,7 @@ body::before {
 
 .ideation-section {
     max-width: 64.125rem;
-    margin: 8rem auto;
+    margin: 6rem auto;
     padding: 0 1.5rem;
 }
 
@@ -1767,7 +1768,7 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 3rem;
     color: var(--text);
 }
 
@@ -1775,7 +1776,7 @@ body::before {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     max-width: 64rem;
 }
 
@@ -1788,7 +1789,7 @@ body::before {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 .post-it {
@@ -1865,7 +1866,7 @@ body::before {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    padding: 4rem 0;
+    padding: 3rem 0;
     margin-top: 0;
 }
 
@@ -1913,7 +1914,7 @@ body::before {
 }
 
 .prioritization-section {
-    margin-top: 8rem;
+    margin-top: 6rem;
     padding: 0 1.5rem;
 }
 
@@ -1921,7 +1922,7 @@ body::before {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     max-width: 64rem;
 }
 
@@ -1970,7 +1971,7 @@ body::before {
 }
 
 .sketches-section {
-    margin-top: 8rem;
+    margin-top: 6rem;
     padding: 0 1.5rem;
 }
 
@@ -1978,7 +1979,7 @@ body::before {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     max-width: 64rem;
 }
 
@@ -2037,7 +2038,7 @@ body::before {
 
 .design-process-section {
     background-color: #F5F5F5;
-    padding: 8rem 0;
+    padding: 6rem 0;
     width: 100%;
 }
 
@@ -2051,7 +2052,7 @@ body::before {
 .process-title {
     font-size: 2rem;
     line-height: 1.2;
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 3rem;
     font-weight: 700;
     width: 100%;
 }
@@ -2059,7 +2060,7 @@ body::before {
 .process-intro {
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     width: 100%;
     max-width: 100%;
     color: var(--text-secondary);
@@ -2072,10 +2073,10 @@ body::before {
 
 .inspiration-platforms {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 }
 
 .platform-item {
@@ -2098,7 +2099,7 @@ body::before {
 
 .platforms-showcase {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     overflow: hidden;
 }
 
@@ -2156,14 +2157,14 @@ body::before {
 }
 
 .user-flow-section {
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .flow-intro {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     max-width: 64rem;
 }
 
@@ -2174,16 +2175,16 @@ body::before {
 
 .flow-diagram {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .flow-container {
     background: #F9F9F9;
     border-radius: 12px;
-    padding: 4rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .flow-image {
@@ -2215,7 +2216,7 @@ body::before {
 
 .final-design-section {
     max-width: 64.125rem;
-    margin: 8rem auto;
+    margin: 6rem auto;
     padding: 0 1.5rem;
 }
 
@@ -2223,14 +2224,14 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 3rem;
     color: var(--text);
 }
 
 .final-design-content {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .design-intro {
@@ -2248,8 +2249,8 @@ body::before {
 .feature-showcase {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    margin-top: 2rem;
+    gap: 3rem;
+    margin-top: 1.5rem;
 }
 
 .feature-label {
@@ -2262,7 +2263,7 @@ body::before {
 .feature-image-wrapper {
     position: relative;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .feature-image-container {
@@ -2408,21 +2409,21 @@ body::before {
 }
 
 .why-best-version {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 .why-best-version h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .version-explanation {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .pain-points-list,
@@ -2437,7 +2438,7 @@ body::before {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-secondary);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     padding-left: 1.25rem;
     position: relative;
 }
@@ -2475,7 +2476,7 @@ body::before {
 
 .learnings-section {
     max-width: 64.125rem;
-    margin: 8rem auto;
+    margin: 6rem auto;
     padding: 0 1.5rem;
 }
 
@@ -2483,14 +2484,14 @@ body::before {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 3rem;
     color: var(--text);
 }
 
 .learnings-content {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .learning-item {
@@ -2502,7 +2503,7 @@ body::before {
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--text);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .learning-text {
@@ -2544,8 +2545,8 @@ body::before {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    padding: 8rem 0;
-    margin-top: 8rem;
+    padding: 6rem 0;
+    margin-top: 6rem;
     color: #ffffff;
 }
 
@@ -2563,7 +2564,7 @@ body::before {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 3rem;
     color: #ffffff;
 }
 
@@ -2576,7 +2577,7 @@ body::before {
     font-size: 1rem;
     line-height: 1.6;
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .next-steps-text p:last-child {
@@ -2601,7 +2602,7 @@ body::before {
 
 .thank-you-section {
     max-width: 64.125rem;
-    margin: 8rem auto;
+    margin: 6rem auto;
     padding: 0 1.5rem;
     text-align: center;
 }
@@ -2610,7 +2611,7 @@ body::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .thank-you-content h2 {
@@ -2658,7 +2659,7 @@ body::before {
     width: 24px;
     height: 24px;
     margin-top: 1rem;
-    color: var(--text);
+    color: #000000;
 }
 
 @media (max-width: 768px) {
