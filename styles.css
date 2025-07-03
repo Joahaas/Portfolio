@@ -1347,4 +1347,4 @@ section h2 {
 .things-dropdown-item[data-tooltip]:hover::after,
 .things-dropdown-item[data-tooltip]:hover::before {
     opacity: 1;
-}
+} 
