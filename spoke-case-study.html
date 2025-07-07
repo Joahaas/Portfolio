@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="spoke-case-study.css">
 </head>
 <body>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
     <!-- HERO SECTION START -->
     <section class="spoke-hero">
         <img src="assets/logo_behind.svg" alt="Decorative Background" class="spoke-hero-bg-svg" aria-hidden="true" />
@@ -31,8 +34,22 @@
     </section>
     <!-- HERO SECTION END -->
 
+    <nav class="case-study-nav">
+      <ul class="nav-list">
+        <li><a href="#overview" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Overview</span></a></li>
+        <li><a href="#problem" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Problem</span></a></li>
+        <li><a href="#research" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Research & Insights</span></a></li>
+        <li><a href="#solution" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Solution</span></a></li>
+        <li><a href="#ideation" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Ideation & Early Concepts</span></a></li>
+        <li><a href="#hifi" class="nav-link"><span class="nav-dash"></span><span class="nav-text">High-Fidelity</span></a></li>
+        <li><a href="#next-steps" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Next Steps</span></a></li>
+        <li><a href="#learnings" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Learnings</span></a></li>
+        <li><a href="#thankyou" class="nav-link"><span class="nav-dash"></span><span class="nav-text">Thank You</span></a></li>
+      </ul>
+    </nav>
+
     <!-- OVERVIEW SECTION START -->
-    <section class="spoke-overview-section">
+    <section class="spoke-overview-section" id="overview">
       <div class="spoke-overview-container">
         <div class="spoke-overview-content">
             <div class="spoke-overview-headings">
@@ -59,7 +76,7 @@
     <!-- OVERVIEW SECTION END -->
 
     <!-- PROBLEM SECTION START -->
-    <section class="spoke-problem-section">
+    <section class="spoke-problem-section" id="problem">
       <div class="spoke-problem-container">
         <h3 class="spoke-problem-title">Problem statement</h3>
         <p class="spoke-problem-desc">Most language learners can read and understand words, but freeze up when it's time to speak — because traditional apps focus on memorization, not <span class="spoke-problem-highlight">real conversation scenarios</span></p>
@@ -68,7 +85,7 @@
     <!-- PROBLEM SECTION END -->
 
     <!-- RESEARCH & INSIGHTS SECTION START -->
-    <section class="spoke-research-section">
+    <section class="spoke-research-section" id="research">
       <div class="spoke-research-container">
         <div class="spoke-research-headings">
           <h2>Research & Insights</h2>
@@ -279,7 +296,7 @@
     <!-- RESEARCH & INSIGHTS SECTION END -->
 
     <!-- SOLUTION SECTION START -->
-    <section class="spoke-solution-section">
+    <section class="spoke-solution-section" id="solution">
       <div class="spoke-solution-container">
         <div class="spoke-solution-left">
           <h2>Our Solution</h2>
@@ -297,7 +314,7 @@
     <!-- SOLUTION SECTION END -->
 
     <!-- IDEATION & EARLY CONCEPTS SECTION START -->
-    <section class="spoke-ideation-section">
+    <section class="spoke-ideation-section" id="ideation">
       <div class="spoke-ideation-container">
         <div class="spoke-ideation-headings">
           <h2>Ideation & Early concepts</h2>
@@ -366,7 +383,7 @@
     </section>
     <!-- IDEATION & EARLY CONCEPTS SECTION END -->
 
-    <section class="spoke-hifi-section">
+    <section class="spoke-hifi-section" id="hifi">
       <div class="spoke-hifi-headings">
         <h2>High-Fidelity</h2>
         <h3 class="spoke-hifi-bold">Make it cleaaan</h3>
@@ -482,7 +499,7 @@
       </div>
     </section>
 
-    <section class="next-steps-section">
+    <section class="next-steps-section" id="next-steps">
       <div class="next-steps-container">
         <div class="next-steps-headings">
           <h2>Next Steps</h2>
@@ -579,7 +596,7 @@
         </div>
     </nav>
 
-    <section class="learnings-section">
+    <section class="learnings-section" id="learnings">
       <div class="learnings-container">
         <div class="learnings-headings">
           <h2>Learnings</h2>
@@ -611,10 +628,18 @@
       </div>
     </section>
 
-    <section class="thankyou-section">
+    <section class="thankyou-section" id="thankyou">
       <div class="thankyou-message">Thank You For Your Time!</div>
     </section>
 
     <script src="scroll.js"></script>
+    <script>
+      window.onscroll = function() {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      };
+    </script>
 </body>
 </html> 
