@@ -309,6 +309,38 @@ h2 {
     letter-spacing: 0.5px;
 }
 
+.project-coming-soon-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    align-self: flex-start;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.project-coming-soon-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.project-card.project-coming-soon {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.project-card.project-coming-soon:hover {
+    transform: none;
+    background: var(--card-bg);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
 .social-links {
     margin-top: 6rem;
     padding: 2rem 0;
